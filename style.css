@@ -1,0 +1,145 @@
+@charset "utf-8";
+body{
+  width: 100%;
+  height: 100vh;
+ background: linear-gradient(rgb(126, 76, 2),rgba(76, 0, 0, 0.781)); 
+}
+
+
+
+.around{
+  /* width: 128px;
+  height:128px; */
+  /* background: black;
+  border-top: 64px solid white;
+  border-bottom: 64px solid white;
+  animation:spin 20s infinite linear; */
+  border-radius: 50%;
+  display: inline-block;
+}
+.around1{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 128px;
+  height:128px;
+  border-top: 64px solid rgb(2, 47, 114);
+  border-bottom: 64px solid rgb(2, 47, 114);
+  animation:spin .2s infinite linear;
+}
+.around2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 256px;
+  height:256px;
+  border-top: 128px solid rgb(98, 4, 230);
+  border-bottom:128px solid rgb(98, 4, 230);
+  animation:spin .01s infinite linear;
+}
+.around3{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 128px;
+  height:128px;
+  border-left: 64px solid rgb(142, 3, 135);
+  border-right: 64px solid rgb(142, 3, 135);
+  animation:spin .1s infinite linear;
+}
+.around4{
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 512px;
+  height:512px;
+  border-left: 256px solid rgb(48, 4, 46);
+  border-right: 256px solid rgb(48, 4, 46);
+  animation:spin .1s infinite linear;
+  opacity: .5;
+}
+.around5{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  margin: 0;
+  width: 512px;
+  height:512px;
+  border-left: 256px solid rgb(31, 0, 108);
+  border-right: 256px solid rgb(31, 0, 108);
+  animation:spin .15s infinite linear;
+  opacity: .5;
+
+}
+
+@keyframes spin{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.pop{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: rgb(77, 16, 26);
+  animation-direction: alternate;
+  animation: move-around 1s infinite  linear;
+}
+
+@keyframes move-around{
+  25%{
+    transform: translate(500px,0);
+
+  }
+  50%{
+    transform: translate(500px,500px);
+
+  }
+  75%{
+    transform: translate(0,500px);
+
+
+
+  }
+  100%{
+    transform:translate(0,0px);
+
+  }
+}
+
+.pop2{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: rgb(122, 74, 82);
+  animation-direction: alternate;
+  animation: move-around2 .5s infinite  linear;
+}
+
+@keyframes move-around2{
+  0%{
+    transform: translate(500px,0);
+
+  }
+  25%{
+    transform: translate(800px,500px);
+
+  }
+  50%{
+    transform: translate(500px,1000px);
+
+
+
+  }
+  75%{
+    transform:translate(300px,500px);
+
+  }
+  100%{
+    transform: translate(500px,0);
+
+  }
+}
+
+  
